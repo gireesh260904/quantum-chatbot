@@ -1,0 +1,142 @@
+body {
+
+    margin: 0;
+    background: #0b1020;
+    color: white;
+    font-family: Arial;
+    display: flex;
+    height: 100vh;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+
+    width: 260px;
+    background: #111827;
+    border-right: 1px solid #222;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.logo {
+
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.new-chat {
+
+    background: #4f46e5;
+    border: none;
+    color: white;
+    padding: 12px;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.history {
+
+    overflow-y: auto;
+}
+
+.history-item {
+
+    background: #1e293b;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* MAIN */
+
+.main {
+
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* CHAT */
+
+#chat-box {
+
+    flex: 1;
+    overflow-y: auto;
+    padding: 30px;
+}
+
+/* USER */
+
+.user-message {
+
+    background: #4f46e5;
+    padding: 15px;
+    border-radius: 18px;
+    margin-bottom: 20px;
+    max-width: 70%;
+    margin-left: auto;
+}
+
+/* BOT */
+
+.bot-message {
+
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 18px;
+    margin-bottom: 25px;
+    max-width: 75%;
+}
+
+.typing {
+
+    opacity: 0.7;
+    font-style: italic;
+}
+
+/* GENERATED IMAGE */
+
+.generated-image {
+
+    width: 100%;
+    max-width: 700px;
+    border-radius: 20px;
+    margin-top: 20px;
+    border: 1px solid #333;
+}
+
+/* INPUT */
+
+.input-container {
+
+    display: flex;
+    padding: 20px;
+    background: #111827;
+    border-top: 1px solid #222;
+}
+
+input {
+
+    flex: 1;
+    padding: 16px;
+    border-radius: 14px;
+    border: none;
+    background: #1e293b;
+    color: white;
+    font-size: 16px;
+}
+
+button {
+
+    margin-left: 10px;
+    padding: 16px 24px;
+    border: none;
+    border-radius: 14px;
+    background: #4f46e5;
+    color: white;
+    cursor: pointer;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>QuantumRAG AI</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static',
+          filename='style.css') }}">
+
+</head>
+
+<body>
+
+<!-- SIDEBAR -->
+
+<div class="sidebar">
+
+    <div class="logo">
+        QuantumRAG AI
+    </div>
+
+    <button class="new-chat">
+        + New Chat
+    </button>
+
+    <div class="history">
+
+        {% for item in history %}
+
+        <div class="history-item">
+            {{ item.user }}
+        </div>
+
+        {% endfor %}
+
+    </div>
+
+</div>
+
+
+<!-- MAIN -->
+
+<div class="main">
+
+    <div id="chat-box">
+
+        <div class="bot-message">
+            Hello! I can generate superconducting
+            quantum chip blueprints using
+            Qiskit Metal + RAG.
+        </div>
+
+    </div>
+
+    <div class="input-container">
+
+        <input
+            type="text"
+            id="message"
+            placeholder="Message QuantumRAG AI..."
+        >
+
+        <button onclick="sendMessage()">
+            Send
+        </button>
+
+    </div>
+
+</div>
+
+<script src="{{ url_for('static',
+filename='app.js') }}"></script>
+
+</body>
+
+</html>

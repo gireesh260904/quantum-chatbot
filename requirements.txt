@@ -1,0 +1,8 @@
+flask
+matplotlib
+numpy
+qiskit
+qiskit-metal
+sentence-transformers
+faiss-cpu
+scikit-learn
